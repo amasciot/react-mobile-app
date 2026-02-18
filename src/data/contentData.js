@@ -160,5 +160,22 @@ export const screens = [
             ],
             conclusion: 'El extensor de línea ahora compensa correctamente las pérdidas del cable.'
         }
+    },
+    {
+        id: 'manuales',
+        icon: '📚',
+        title: 'Documentación',
+        subtitle: 'Manuales y Guías PDF',
+        content: {
+            heading: 'Manuales de Usuario',
+            intro: 'Selecciona el documento que deseas visualizar. Los archivos se abrirán en una nueva pestaña.',
+            sectionTitle: 'Documentos Disponibles',
+            items: [
+                { label: 'Manual 1:', description: 'Guía técnica de equipos Legacy', file: '/docs/manual1.pdf' },
+                { label: 'Manual 2:', description: 'Procedimientos Remote Phy', file: '/docs/manual2.pdf' },
+                { label: 'Manual 3:', description: 'Especificaciones HGD/HGBT', file: '/docs/manual3.pdf' }
+            ],
+            conclusion: 'Si necesitas manuales adicionales, por favor contacta al administrador del sistema.'
+        }
     }
 ];

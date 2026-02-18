@@ -22,8 +22,21 @@ function ContentScreen({ screen, onBack, isActive }) {
                     <h4>{content.sectionTitle}</h4>
                     <ul>
                         {content.items.map((item, index) => (
-                            <li key={index}>
-                                <strong>{item.label}</strong> {item.description}
+                            <li key={index} className={item.file ? 'file-item' : ''}>
+                                {item.file ? (
+                                    <a href={item.file} target="_blank" rel="noopener noreferrer" className="pdf-button">
+                                        <span className="pdf-icon">📄</span>
+                                        <div className="pdf-info">
+                                            <span className="pdf-label">{item.label}</span>
+                                            <span className="pdf-description">{item.description}</span>
+                                        </div>
+                                        <span className="pdf-arrow">→</span>
+                                    </a>
+                                ) : (
+                                    <>
+                                        <strong>{item.label}</strong> {item.description}
+                                    </>
+                                )}
                             </li>
                         ))}
                     </ul>
