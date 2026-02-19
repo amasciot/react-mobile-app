@@ -27,9 +27,20 @@ function NavButton({ icon, title, subtitle, onClick }) {
         onClick();
     };
 
+    const isImageIcon = (icon) => {
+        if (!icon) return false;
+        return icon.includes('.') || icon.startsWith('/') || icon.startsWith('http');
+    };
+
     return (
         <button className="nav-button" onClick={handleClick}>
-            <div className="button-icon">{icon}</div>
+            <div className="button-icon">
+                {isImageIcon(icon) ? (
+                    <img src={icon} alt={title} className="icon-img" />
+                ) : (
+                    icon
+                )}
+            </div>
             <div className="button-content">
                 <h3>{title}</h3>
                 <p>{subtitle}</p>

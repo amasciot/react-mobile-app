@@ -1,7 +1,7 @@
 export const screens = [
     {
         id: 'screen1',
-        icon: '📟',
+        icon: 'images.png',
         title: 'Equipos Legacy',
         subtitle: 'Tips de Ajuste',
         content: {
@@ -19,7 +19,7 @@ export const screens = [
     },
     {
         id: 'screen2',
-        icon: '🎨',
+        icon: 'images.png',
         title: 'Equipos Remote Phy',
         subtitle: 'Ajuste con ORE por MDA Técnica',
         content: {
@@ -32,12 +32,12 @@ export const screens = [
                 { label: 'Paso 3:', description: 'Diseño inclusivo para todos' },
                 { label: 'Paso 4:', description: 'Guiar la atención del usuario' }
             ],
-            conclusion: 'El diseño moderno combina funcionalidad con belleza, creando interfaces que no solo se ven bien, sino que también funcionan de manera intuitiva y eficiente.'
+            conclusion: 'Sin sentido'
         }
     },
     {
         id: 'screen3',
-        icon: '🚀',
+        icon: 'Icon.png',
         title: 'Equipos Armonic Puros',
         subtitle: 'Equipos VCCAP FP_Armonic/RF_Armonic',
         content: {
@@ -55,7 +55,7 @@ export const screens = [
     },
     {
         id: 'screen4',
-        icon: '💡',
+        icon: 'collage.png',
         title: 'Equipos Armonic Hibrid',
         subtitle: 'Equipos VCCAP FO_Armonic/RF_Cisco',
         content: {
@@ -73,7 +73,7 @@ export const screens = [
     },
     {
         id: 'screen5',
-        icon: '🌟',
+        icon: 'images.png',
         title: 'Equipos HGD 42',
         subtitle: 'Pasos de ajuste y niveles',
         content: {
@@ -91,7 +91,7 @@ export const screens = [
     },
     {
         id: 'screen6',
-        icon: '⚡',
+        icon: 'images.png',
         title: 'Equipos HGD 85',
         subtitle: 'Pasos de ajuste y niveles',
         content: {
@@ -109,7 +109,7 @@ export const screens = [
     },
     {
         id: 'screen7',
-        icon: '�️',
+        icon: 'images.png',
         title: 'Equipos HGBT 42',
         subtitle: 'Pasos de ajuste y niveles',
         content: {
@@ -127,7 +127,7 @@ export const screens = [
     },
     {
         id: 'screen8',
-        icon: '📶',
+        icon: 'images.png',
         title: 'Equipos HGBT 85',
         subtitle: 'Pasos de ajuste y niveles',
         content: {
@@ -145,7 +145,7 @@ export const screens = [
     },
     {
         id: 'screen9',
-        icon: '�️',
+        icon: 'images.png',
         title: 'Equipos Line Extender',
         subtitle: 'Pasos de ajuste y niveles',
         content: {
