@@ -1,7 +1,7 @@
 export const screens = [
     {
         id: 'screen1',
-        icon: 'images.png',
+        icon: '/images.png',
         title: 'Equipos Legacy',
         subtitle: 'Tips de Ajuste',
         content: {
@@ -19,7 +19,7 @@ export const screens = [
     },
     {
         id: 'screen2',
-        icon: 'images.png',
+        icon: '/images.png',
         title: 'Equipos Remote Phy',
         subtitle: 'Ajuste con ORE por MDA Técnica',
         content: {
@@ -37,7 +37,7 @@ export const screens = [
     },
     {
         id: 'screen3',
-        icon: 'Icon.png',
+        icon: '/Icon.png',
         title: 'Equipos Armonic Puros',
         subtitle: 'Equipos VCCAP FP_Armonic/RF_Armonic',
         content: {
@@ -55,7 +55,7 @@ export const screens = [
     },
     {
         id: 'screen4',
-        icon: 'collage.png',
+        icon: '/collage.png',
         title: 'Equipos Armonic Hibrid',
         subtitle: 'Equipos VCCAP FO_Armonic/RF_Cisco',
         content: {
@@ -73,7 +73,7 @@ export const screens = [
     },
     {
         id: 'screen5',
-        icon: 'images.png',
+        icon: '/images.png',
         title: 'Equipos HGD 42',
         subtitle: 'Pasos de ajuste y niveles',
         content: {
@@ -91,7 +91,7 @@ export const screens = [
     },
     {
         id: 'screen6',
-        icon: 'images.png',
+        icon: '/images.png',
         title: 'Equipos HGD 85',
         subtitle: 'Pasos de ajuste y niveles',
         content: {
@@ -109,7 +109,7 @@ export const screens = [
     },
     {
         id: 'screen7',
-        icon: 'images.png',
+        icon: '/images.png',
         title: 'Equipos HGBT 42',
         subtitle: 'Pasos de ajuste y niveles',
         content: {
@@ -127,7 +127,7 @@ export const screens = [
     },
     {
         id: 'screen8',
-        icon: 'images.png',
+        icon: '/images.png',
         title: 'Equipos HGBT 85',
         subtitle: 'Pasos de ajuste y niveles',
         content: {
@@ -145,7 +145,7 @@ export const screens = [
     },
     {
         id: 'screen9',
-        icon: 'images.png',
+        icon: '/images.png',
         title: 'Equipos Line Extender',
         subtitle: 'Pasos de ajuste y niveles',
         content: {
