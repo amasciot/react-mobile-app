@@ -2,7 +2,7 @@ export const screens = [
     {
         id: 'screen1',
         icon: '/images.png',
-        title: 'Validación de Enlace',
+        title: 'Equipos Legacy',
         subtitle: 'Mediciones de potencia óptica y RF',
         content: {
             heading: 'Mediciones de potencia óptica en TP de RX y TX',
@@ -19,7 +19,7 @@ export const screens = [
                 },
                 {
                     label: 'Paso 3 (Verificación RPR):',
-                    description: 'Para Standard Gain requerido entre 0 y -8.5 dBm (recomendado entre -4 y -6 dBm). Para High Gain requerido entre -8 y -17 dBm (recomendado entre -10 y -14 dBm).'
+                    description: 'Standard Gain: Requerido entre -4 y -6 dBm. High Gain: Requerido entre -10 y -14 dBm.'
                 },
                 {
                     label: 'Paso 4 (RF Directa):',
@@ -44,27 +44,11 @@ export const screens = [
             sectionTitle: 'Procedimiento Técnico',
             items: [
                 {
-                    label: 'Óptica Directa:',
-                    description: 'Verificar voltaje con tester entre (0,9 V y 1,2 V). Si se detecta menos o más se debe ajustar con hub.'
+                    description: 'El ajuste de niveles en caso de ser necesario lo debera hacer el personal de ORE'
                 },
-                {
-                    label: 'Óptica Retorno:',
-                    description: 'Verificar voltaje con tester entre (2 V). Si se detecta un valor diferente se debe reemplazar en nodo.'
-                },
-                {
-                    label: 'TIPO DE RPR:',
-                    description: 'Standard Gain: Requerido entre 0 y -8.5 dBm (Recomendado entre -4 y -6 dBm). High Gain: Requerido entre -8 y -17 dBm (Recomendado entre -10 y -14 dBm).'
-                },
-                {
-                    label: 'RF Directa:',
-                    description: 'Medir en el TP de salida del RX (donde se toma el transponder óptico). Usar modo "Experto de canales". Se deben medir 27 dBm planos y un MER >= 40 dB. Ajustar atenuadores en los 4 puertos según la lápida del plano.'
-                },
-                {
-                    label: 'RF Retorno:',
-                    description: 'Medir inyectando portadora en cada puerto y ajustando con Hub. Los pads del módulo se deben poner en cero.'
-                }
+                
             ],
-            conclusion: 'IMPORTANTE: Se debe medir así para verificar que la salida es plana en todo el espectro. Validar los valores de PAD de la OIB según tabla en sección Documentación.'
+            conclusion: 'IMPORTANTE: Ante la no respuesta o menor duda consultar con el Supervisor de la zona a fin de acortar los tiempos de respuesta'
         }
     },
     {
@@ -73,16 +57,11 @@ export const screens = [
         title: 'Equipos Armonic Puros',
         subtitle: 'Equipos VCCAP FP_Armonic/RF_Armonic',
         content: {
-            heading: 'Solo se puede medir y en caso de valores erraticos reportar a Operador',
-            intro: 'La innovación es el motor del progreso. No se trata solo de crear algo nuevo, sino de encontrar mejores formas de hacer las cosas y resolver problemas que antes parecían imposibles.',
-            sectionTitle: 'Procedimiento',
-            items: [
-                { label: 'Paso 1:', description: 'Medicina personalizada y telemedicina' },
-                { label: 'Paso 2:', description: 'Soluciones sostenibles' },
-                { label: 'Paso 3:', description: 'Vehículos autónomos y eléctricos' },
-                { label: 'Paso 4:', description: 'Aprendizaje adaptativo e interactivo' }
-            ],
-            conclusion: 'Cada innovación abre nuevas posibilidades y desafíos, empujando los límites de lo que creíamos posible y creando un futuro más brillante para todos.'
+            heading: 'Se debe medir las salidas en para verificar niveles corectos, IMPORTANTE: En Armonic puro el TP es de 30 dBmV',
+            intro: 'En el caso de detectar anomalias se deben referir al Supervisor y operar con ORE para gestionar su ajsute definitivo via Noc',
+            
+            items: [ {label: ' El TP del armonic puro en -30 dBm'} ],
+            
         }
     },
     {
@@ -122,10 +101,10 @@ export const screens = [
     {
         id: 'screen5',
         icon: '/images.png',
-        title: 'Equipos HGD 42',
+        title: 'Equipos HGD y HGBT 42',
         subtitle: 'Pasos de ajuste y niveles',
         content: {
-            heading: 'Lo Mejor de Esta Semana',
+            heading: '',
             intro: 'Cada semana trae nuevas oportunidades, descubrimientos y logros. Aquí destacamos lo más relevante e interesante que no te puedes perder.',
             sectionTitle: 'Procedimiento',
             items: [
