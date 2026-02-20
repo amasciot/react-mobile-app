@@ -2,19 +2,35 @@ export const screens = [
     {
         id: 'screen1',
         icon: '/images.png',
-        title: 'Equipos Legacy',
-        subtitle: 'Tips de Ajuste',
+        title: 'Validación de Enlace',
+        subtitle: 'Mediciones de potencia óptica y RF',
         content: {
-            heading: 'Pasos para el ajuste',
-            intro: 'Instrucciones detalladas para la configuración de los componentes del sistema.',
+            heading: 'Mediciones de potencia óptica en TP de RX y TX',
+            intro: 'Instrucciones detalladas para la validación del enlace y medición en RF.',
             sectionTitle: 'Procedimiento',
             items: [
-                { label: 'Paso 1:', description: 'Se verifica ajuste inicial y maesto de canales en viavi' },
-                { label: 'Paso 2:', description: 'Si hay diferencias con lo esperado hub' },
-                { label: 'Paso 3:', description: 'Se ajustan las portadoras en los valores' },
-                { label: 'Paso 4:', description: 'Se ajustan salidas a los valores de tabla ajustando las diferencias' }
+                {
+                    label: 'Paso 1 (Óptica Directa):',
+                    description: 'Verificar voltaje con tester entre 0,9 V y 1,2 V. Si se detecta menos o más se debe ajustar con hub.'
+                },
+                {
+                    label: 'Paso 2 (Óptica Retorno):',
+                    description: 'Verificar voltaje con tester en 2 V. Si se detecta un valor diferente se debe reemplazar en nodo.'
+                },
+                {
+                    label: 'Paso 3 (Verificación RPR):',
+                    description: 'Para Standard Gain requerido entre 0 y -8.5 dBm (recomendado entre -4 y -6 dBm). Para High Gain requerido entre -8 y -17 dBm (recomendado entre -10 y -14 dBm).'
+                },
+                {
+                    label: 'Paso 4 (RF Directa):',
+                    description: 'Medir en el TP de salida del RX en modo "Experto de canales". Se deben medir a la salida 27 dBm planos y un MER >= a 40 dB. Ajustar los atenuadores en los 4 puertos al valor de la lápida del plano.'
+                },
+                {
+                    label: 'Paso 5 (RF Retorno):',
+                    description: 'Medir inyectando portadora en cada puerto y ajustando con Hub; los pads del módulo se deben poner en cero.'
+                }
             ],
-            conclusion: 'Una vez completados estos pasos, el sistema estará correctamente ajustado.'
+            conclusion: 'IMPORTANTE: Se debe medir así para verificar que la salida es plana en todo el espectro. Validar los valores de PAD de la OIB según tabla en sección Documentación.'
         }
     },
     {
@@ -23,16 +39,32 @@ export const screens = [
         title: 'Equipos Remote Phy',
         subtitle: 'Ajuste con ORE por MDA Técnica',
         content: {
-            heading: 'El Arte del Diseño Moderno',
-            intro: 'El diseño es mucho más que estética; es la solución elegante a problemas complejos. En el mundo digital actual, el diseño centrado en el usuario es fundamental para crear experiencias memorables.',
-            sectionTitle: 'Procedimiento',
+            heading: 'Validación de Enlace',
+            intro: 'Mediciones de potencia óptica en TP de RX y TX.',
+            sectionTitle: 'Procedimiento Técnico',
             items: [
-                { label: 'Paso 1:', description: 'Menos es más en el diseño efectivo' },
-                { label: 'Paso 2:', description: 'Mantener patrones reconocibles' },
-                { label: 'Paso 3:', description: 'Diseño inclusivo para todos' },
-                { label: 'Paso 4:', description: 'Guiar la atención del usuario' }
+                {
+                    label: 'Óptica Directa:',
+                    description: 'Verificar voltaje con tester entre (0,9 V y 1,2 V). Si se detecta menos o más se debe ajustar con hub.'
+                },
+                {
+                    label: 'Óptica Retorno:',
+                    description: 'Verificar voltaje con tester entre (2 V). Si se detecta un valor diferente se debe reemplazar en nodo.'
+                },
+                {
+                    label: 'TIPO DE RPR:',
+                    description: 'Standard Gain: Requerido entre 0 y -8.5 dBm (Recomendado entre -4 y -6 dBm). High Gain: Requerido entre -8 y -17 dBm (Recomendado entre -10 y -14 dBm).'
+                },
+                {
+                    label: 'RF Directa:',
+                    description: 'Medir en el TP de salida del RX (donde se toma el transponder óptico). Usar modo "Experto de canales". Se deben medir 27 dBm planos y un MER >= 40 dB. Ajustar atenuadores en los 4 puertos según la lápida del plano.'
+                },
+                {
+                    label: 'RF Retorno:',
+                    description: 'Medir inyectando portadora en cada puerto y ajustando con Hub. Los pads del módulo se deben poner en cero.'
+                }
             ],
-            conclusion: 'Sin sentido'
+            conclusion: 'IMPORTANTE: Se debe medir así para verificar que la salida es plana en todo el espectro. Validar los valores de PAD de la OIB según tabla en sección Documentación.'
         }
     },
     {
@@ -41,7 +73,7 @@ export const screens = [
         title: 'Equipos Armonic Puros',
         subtitle: 'Equipos VCCAP FP_Armonic/RF_Armonic',
         content: {
-            heading: 'Innovación que Transforma',
+            heading: 'Solo se puede medir y en caso de valores erraticos reportar a Operador',
             intro: 'La innovación es el motor del progreso. No se trata solo de crear algo nuevo, sino de encontrar mejores formas de hacer las cosas y resolver problemas que antes parecían imposibles.',
             sectionTitle: 'Procedimiento',
             items: [
@@ -59,16 +91,32 @@ export const screens = [
         title: 'Equipos Armonic Hibrid',
         subtitle: 'Equipos VCCAP FO_Armonic/RF_Cisco',
         content: {
-            heading: 'Encuentra Tu Motivación',
-            intro: 'La inspiración está en todas partes, esperando ser descubierta. A veces viene de los lugares más inesperados, y otras veces la encontramos en las historias de quienes han superado grandes desafíos.',
-            sectionTitle: 'Procedimiento',
+            heading: 'Ajuste de Equipos Híbridos',
+            intro: 'Información técnica para equipos VCCAP FO_Armonic/RF_Cisco con módulos Pebble 2.',
+            sectionTitle: 'Procedimiento de Ajuste',
             items: [
-                { label: 'Paso 1:', description: 'La perfección del diseño natural' },
-                { label: 'Paso 2:', description: 'Expresión creativa sin límites' },
-                { label: 'Paso 3:', description: 'Historias de superación y éxito' },
-                { label: 'Paso 4:', description: 'Nuevas perspectivas y culturas' }
+                {
+                    label: 'Fibra Óptica:',
+                    description: 'El ajuste es nulo por parte del técnico. Solo se debe verificar que la portadora esté entre 15 y 20 dBm.'
+                },
+                {
+                    label: 'Módulo Pebble 2:',
+                    description: 'El nivel de salida es de 18 dBm (no medible desde ningún lugar del nodo).'
+                },
+                {
+                    label: 'Ajuste General:',
+                    description: 'Pasos similares al módulo Legacy, pero con distintas herramientas de monitoreo.'
+                },
+                {
+                    label: 'RF Directa:',
+                    description: 'Medir portadoras en todos los puertos. La diferencia entre ellos debe ser tolerable (rango +/- 3 dB).'
+                },
+                {
+                    label: 'RF Retorno:',
+                    description: 'Inyectar portadora y verificar en Sonar. Ajustar pads según los valores requeridos por el plano Cisco.'
+                }
             ],
-            conclusion: 'Mantén los ojos abiertos y la mente curiosa. La inspiración puede llegar en cualquier momento y transformar completamente tu perspectiva sobre lo que es posible.'
+            conclusion: 'IMPORTANTE: Los equipos Híbridos con módulos de RF Cisco tienen valores de TP de -20 dBm.'
         }
     },
     {
