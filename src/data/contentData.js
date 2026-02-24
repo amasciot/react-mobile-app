@@ -104,74 +104,48 @@ export const screens = [
         title: 'Equipos HGD y HGBT 42',
         subtitle: 'Pasos de ajuste y niveles',
         content: {
-            heading: '',
-            intro: 'Cada semana trae nuevas oportunidades, descubrimientos y logros. Aquí destacamos lo más relevante e interesante que no te puedes perder.',
-            sectionTitle: 'Procedimiento',
+            heading: 'Medicion, calculo teorico de perdidas, evaluacion diagnostica',
+            intro: 'Es impresindible un buen diagnostico de los niveles y formas onda en la entrada para poder ajustar adecuadamente la/s salida',
+            sectionTitle: 'Procedimiento Técnico',
             items: [
-                { label: 'Paso 1:', description: 'Nueva misión a Marte exitosa' },
-                { label: 'Paso 2:', description: 'Terapia génica revolucionaria' },
-                { label: 'Paso 3:', description: 'Batería de larga duración ecológica' },
-                { label: 'Paso 4:', description: 'Exposición virtual inmersiva' }
-            ],
-            conclusion: 'Estos momentos destacados representan el increíble potencial humano para crear, innovar y mejorar nuestro mundo de maneras que antes solo podíamos imaginar.'
+                { label: 'Observacion importante:', description: 'En redes de 42 MHz SI se pueden utilizar modulos de 85 MHz' },
+                { label: 'Paso 1:', description: 'Revisar lapida de plano y plano evaluando conincidencias o no coincidencias' },
+                { label: 'Paso 2:', description: 'Medir los niveles a la entrada en los HGD y HGBT no pueden ser menores a 16 dBmV en ningun canal.' },
+                { label: 'Paso 3:', description: 'Comparar la entrada medida con la entrada calculada desde el activo anterior, esta no debe diferir en +/- 2 dBmV y la pendiente parecida a la terorica calculada' },
+                { label: 'Paso 4:', description: 'De ser coincidente proceder al ajuste si no revisar los pasivos del recorrido segun criterios generales' },
+                { label: 'Paso 5:', description: 'Ajustar en modo normal 1 a niveles de salida, todas las salidas, segun lapida y pasar a modo AGC 3'},
+                { label: 'Paso 6:', description: 'Revisar que el pad del AGC sea de 15db en redes de 42 MHz'},
+                { label: 'Paso 7:', description: 'Ajustar en modo AGC 3 a niveles de salida segun lapida de plano'}
+        ],
+        conclusion: 'NOTA IMPORTANTE: Nunca se debe dejar el selector en modo 2, el modo no es utilizado en las redes de telecentro'
+        
+
         }
     },
     {
         id: 'screen6',
         icon: '/images.png',
-        title: 'Equipos HGD 85',
+        title: 'Equipos HGD y HGBT 85',
         subtitle: 'Pasos de ajuste y niveles',
-        content: {
-            heading: 'Información al Instante',
-            intro: 'En un mundo que se mueve rápido, el acceso instantáneo a la información es crucial. Esta sección te proporciona datos rápidos y útiles cuando más los necesitas.',
-            sectionTitle: 'Procedimiento',
+       content: {
+            heading: 'Medicion, calculo teorico de perdidas, evaluacion diagnostica',
+            intro: 'Es impresindible un buen diagnostico de los niveles y formas onda en la entrada para poder ajustar adecuadamente la/s salida',
+            sectionTitle: 'Procedimiento Técnico',
             items: [
-                { label: 'Paso 1:', description: 'Optimizado para velocidad máxima' },
-                { label: 'Paso 2:', description: 'Interfaz intuitiva y fluida' },
-                { label: 'Paso 3:', description: 'Actualizado en tiempo real' },
-                { label: 'Paso 4:', description: 'Disponible en cualquier dispositivo' }
-            ],
-            conclusion: 'La velocidad no es solo una característica, es una necesidad. Cada segundo cuenta cuando buscas información importante o necesitas tomar decisiones rápidas.'
+                { label: 'Observacion importante:', description: 'En redes de 85 MHz NO se pueden utilizar modulos de 42 MHz' },
+                { label: 'Paso 1:', description: 'Revisar lapida de plano y plano evaluando conincidencias o no coincidencias' },
+                { label: 'Paso 2:', description: 'Medir los niveles a la entrada en los HGD y HGBT no pueden ser menores a 16 dBmV en ningun canal.' },
+                { label: 'Paso 3:', description: 'Comparar la entrada medida con la entrada calculada desde el activo anterior, esta no debe diferir en +/- 2 dBmV y la pendiente parecida a la terorica calculada' },
+                { label: 'Paso 4:', description: 'De ser coincidente proceder al ajuste si no revisar los pasivos del recorrido segun criterios generales' },
+                { label: 'Paso 5:', description: 'Ajustar en modo normal 1 a niveles de salida, todas las salidas, segun lapida y pasar a modo AGC 3'},
+                { label: 'Paso 6:', description: 'Revisar que el pad sea de 13db para equipos de 85 MHz'},
+                { label: 'Paso 7:', description: 'Ajustar en modo AGC 3 a niveles de salida segun lapida de plano'}
+        ],
+        conclusion: 'NOTA IMPORTANTE: Nunca se debe dejar el selector en modo 2, el modo no es utilizado en las redes de telecentro'
         }
     },
     {
         id: 'screen7',
-        icon: '/images.png',
-        title: 'Equipos HGBT 42',
-        subtitle: 'Pasos de ajuste y niveles',
-        content: {
-            heading: 'Detalles Técnicos HGBT 42',
-            intro: 'Configuración específica para equipos HGBT con rango de 42 MHz.',
-            sectionTitle: 'Procedimiento',
-            items: [
-                { label: 'Paso 1:', description: 'Verificación de entrada de señal' },
-                { label: 'Paso 2:', description: 'Ajuste de ganancia y pendiente' },
-                { label: 'Paso 3:', description: 'Prueba de portadoras de retorno' },
-                { label: 'Paso 4:', description: 'Cierre y sellado de equipo' }
-            ],
-            conclusion: 'El equipo HGBT 42 operará con máxima eficiencia tras estos ajustes.'
-        }
-    },
-    {
-        id: 'screen8',
-        icon: '/images.png',
-        title: 'Equipos HGBT 85',
-        subtitle: 'Pasos de ajuste y niveles',
-        content: {
-            heading: 'Detalles Técnicos HGBT 85',
-            intro: 'Optimización de equipos HGBT configurados para el estándar de 85 MHz.',
-            sectionTitle: 'Procedimiento',
-            items: [
-                { label: 'Paso 1:', description: 'Chequeo de niveles de salida' },
-                { label: 'Paso 2:', description: 'Sincronización con el nodo' },
-                { label: 'Paso 3:', description: 'Calibración de ecualizadores' },
-                { label: 'Paso 4:', description: 'Validación de telemetría' }
-            ],
-            conclusion: 'La configuración de 85 MHz asegura un ancho de banda superior.'
-        }
-    },
-    {
-        id: 'screen9',
         icon: '/images.png',
         title: 'Equipos Line Extender',
         subtitle: 'Pasos de ajuste y niveles',
@@ -189,9 +163,26 @@ export const screens = [
         }
     },
     {
-        id: 'manuales',
-        icon: '📚',
+        id: 'screen8',
+        icon: '/libros.webp',
         title: 'Documentación',
+        subtitle: 'Manuales y Guías PDF',
+        content: {
+            heading: 'Manuales de Usuario',
+            intro: 'Selecciona el documento que deseas visualizar. Los archivos se abrirán en una nueva pestaña.',
+            sectionTitle: 'Documentos Disponibles',
+            items: [
+                { label: 'Manual 1:', description: 'Guía técnica de equipos Legacy', file: '/docs/manual1.pdf' },
+                { label: 'Manual 2:', description: 'Procedimientos Remote Phy', file: '/docs/manual2.pdf' },
+                { label: 'Manual 3:', description: 'Especificaciones HGD/HGBT', file: '/docs/manual3.pdf' }
+            ],
+            conclusion: 'Si necesitas manuales adicionales, por favor contacta al administrador del sistema.'
+        }
+    },
+    { 
+        id: 'screen9',
+        icon: '/lapida.gif',
+        title: 'Lápidas',
         subtitle: 'Manuales y Guías PDF',
         content: {
             heading: 'Manuales de Usuario',
