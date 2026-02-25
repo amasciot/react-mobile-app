@@ -33,9 +33,14 @@ function ContentScreen({ screen, onBack, isActive }) {
                                         <span className="pdf-arrow">→</span>
                                     </a>
                                 ) : (
-                                    <>
-                                        <strong>{item.label}</strong> {item.description}
-                                    </>
+                                    <div className="item-text-content">
+                                        {item.label && <strong>{item.label}</strong>} {item.description}
+                                        {item.image && (
+                                            <div className="item-image-container">
+                                                <img src={item.image} alt={item.label || 'Imagen técnica'} className="item-image" />
+                                            </div>
+                                        )}
+                                    </div>
                                 )}
                             </li>
                         ))}

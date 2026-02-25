@@ -46,7 +46,7 @@ export const screens = [
                 {
                     description: 'El ajuste de niveles en caso de ser necesario lo debera hacer el personal de ORE'
                 },
-                
+
             ],
             conclusion: 'IMPORTANTE: Ante la no respuesta o menor duda consultar con el Supervisor de la zona a fin de acortar los tiempos de respuesta'
         }
@@ -59,9 +59,9 @@ export const screens = [
         content: {
             heading: 'Se debe medir las salidas en para verificar niveles corectos, IMPORTANTE: En Armonic puro el TP es de 30 dBmV',
             intro: 'En el caso de detectar anomalias se deben referir al Supervisor y operar con ORE para gestionar su ajsute definitivo via Noc',
-            
-            items: [ {label: ' El TP del armonic puro en -30 dBm'} ],
-            
+
+            items: [{ label: ' El TP del armonic puro en -30 dBm' }],
+
         }
     },
     {
@@ -113,12 +113,12 @@ export const screens = [
                 { label: 'Paso 2:', description: 'Medir los niveles a la entrada en los HGD y HGBT no pueden ser menores a 16 dBmV en ningun canal.' },
                 { label: 'Paso 3:', description: 'Comparar la entrada medida con la entrada calculada desde el activo anterior, esta no debe diferir en +/- 2 dBmV y la pendiente parecida a la terorica calculada' },
                 { label: 'Paso 4:', description: 'De ser coincidente proceder al ajuste si no revisar los pasivos del recorrido segun criterios generales' },
-                { label: 'Paso 5:', description: 'Ajustar en modo normal 1 a niveles de salida, todas las salidas, segun lapida y pasar a modo AGC 3'},
-                { label: 'Paso 6:', description: 'Revisar que el pad del AGC sea de 15db en redes de 42 MHz'},
-                { label: 'Paso 7:', description: 'Ajustar en modo AGC 3 a niveles de salida segun lapida de plano'}
-        ],
-        conclusion: 'NOTA IMPORTANTE: Nunca se debe dejar el selector en modo 2, el modo no es utilizado en las redes de telecentro'
-        
+                { label: 'Paso 5:', description: 'Ajustar en modo normal 1 a niveles de salida, todas las salidas, segun lapida y pasar a modo AGC 3' },
+                { label: 'Paso 6:', description: 'Revisar que el pad del AGC sea de 15db en redes de 42 MHz' },
+                { label: 'Paso 7:', description: 'Ajustar en modo AGC 3 a niveles de salida segun lapida de plano' }
+            ],
+            conclusion: 'NOTA IMPORTANTE: Nunca se debe dejar el selector en modo 2, el modo no es utilizado en las redes de telecentro'
+
 
         }
     },
@@ -127,7 +127,7 @@ export const screens = [
         icon: '/images.png',
         title: 'Equipos HGD y HGBT 85',
         subtitle: 'Pasos de ajuste y niveles',
-       content: {
+        content: {
             heading: 'Medicion, calculo teorico de perdidas, evaluacion diagnostica',
             intro: 'Es impresindible un buen diagnostico de los niveles y formas onda en la entrada para poder ajustar adecuadamente la/s salida',
             sectionTitle: 'Procedimiento Técnico',
@@ -137,11 +137,11 @@ export const screens = [
                 { label: 'Paso 2:', description: 'Medir los niveles a la entrada en los HGD y HGBT no pueden ser menores a 16 dBmV en ningun canal.' },
                 { label: 'Paso 3:', description: 'Comparar la entrada medida con la entrada calculada desde el activo anterior, esta no debe diferir en +/- 2 dBmV y la pendiente parecida a la terorica calculada' },
                 { label: 'Paso 4:', description: 'De ser coincidente proceder al ajuste si no revisar los pasivos del recorrido segun criterios generales' },
-                { label: 'Paso 5:', description: 'Ajustar en modo normal 1 a niveles de salida, todas las salidas, segun lapida y pasar a modo AGC 3'},
-                { label: 'Paso 6:', description: 'Revisar que el pad sea de 13db para equipos de 85 MHz'},
-                { label: 'Paso 7:', description: 'Ajustar en modo AGC 3 a niveles de salida segun lapida de plano'}
-        ],
-        conclusion: 'NOTA IMPORTANTE: Nunca se debe dejar el selector en modo 2, el modo no es utilizado en las redes de telecentro'
+                { label: 'Paso 5:', description: 'Ajustar en modo normal 1 a niveles de salida, todas las salidas, segun lapida y pasar a modo AGC 3' },
+                { label: 'Paso 6:', description: 'Revisar que el pad sea de 13db para equipos de 85 MHz' },
+                { label: 'Paso 7:', description: 'Ajustar en modo AGC 3 a niveles de salida segun lapida de plano' }
+            ],
+            conclusion: 'NOTA IMPORTANTE: Nunca se debe dejar el selector en modo 2, el modo no es utilizado en las redes de telecentro'
         }
     },
     {
@@ -179,7 +179,7 @@ export const screens = [
             conclusion: 'Si necesitas manuales adicionales, por favor contacta al administrador del sistema.'
         }
     },
-    { 
+    {
         id: 'screen9',
         icon: '/lapida.gif',
         title: 'Lápidas',
@@ -189,11 +189,23 @@ export const screens = [
             intro: 'Selecciona el documento que deseas visualizar. Los archivos se abrirán en una nueva pestaña.',
             sectionTitle: 'Documentos Disponibles',
             items: [
-                { label: 'Manual 1:', description: 'Guía técnica de equipos Legacy', file: '/docs/manual1.pdf' },
-                { label: 'Manual 2:', description: 'Procedimientos Remote Phy', file: '/docs/manual2.pdf' },
-                { label: 'Manual 3:', description: 'Especificaciones HGD/HGBT', file: '/docs/manual3.pdf' }
+                {
+                    label: 'Lápida de Referencia 1:',
+                    description: 'Valores estándar para nodos Legacy.',
+                    image: '/images/lapida_legacy.png'
+                },
+                {
+                    label: 'Lápida de Referencia 2:',
+                    description: 'Configuración típica para Remote Phy.',
+                    image: '/images/lapida_rphy.png'
+                },
+                {
+                    label: 'Lápida de Referencia 3:',
+                    description: 'Niveles óptimos para HGD/HGBT.',
+                    image: '/images/lapida_hgd.png'
+                }
             ],
-            conclusion: 'Si necesitas manuales adicionales, por favor contacta al administrador del sistema.'
+            conclusion: 'Estas lápidas sirven como referencia visual para los ajustes en campo.'
         }
     }
 ];
