@@ -191,18 +191,18 @@ export const screens = [
             items: [
                 {
                     label: 'Lápida de Referencia 1:',
-                    description: 'Valores estándar para nodos Legacy.',
-                    image: '/images/lapida_legacy.png'
+                    description: 'Lapidas de formato 1',
+                    image: '/Lapida1.jpeg'
                 },
                 {
                     label: 'Lápida de Referencia 2:',
-                    description: 'Configuración típica para Remote Phy.',
-                    image: '/images/lapida_rphy.png'
+                    description: 'Lapidas con formato 2',
+                    image: '/Lapida2.jpeg'
                 },
                 {
                     label: 'Lápida de Referencia 3:',
-                    description: 'Niveles óptimos para HGD/HGBT.',
-                    image: '/images/lapida_hgd.png'
+                    description: 'Lapidas con formato 3',
+                    image: '/Lapida3.jpeg'
                 }
             ],
             conclusion: 'Estas lápidas sirven como referencia visual para los ajustes en campo.'
