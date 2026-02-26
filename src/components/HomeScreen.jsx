@@ -5,7 +5,7 @@ function HomeScreen({ screens, onNavigate }) {
     return (
         <div className="screen active" id="home-screen">
             <div className="header">
-                <h1 className="app-title">Mi App Móvil</h1>
+                <h1 className="app-title">Tele-Ajustes</h1>
                 <p className="app-subtitle">Selecciona una opción</p>
             </div>
 

@@ -10,8 +10,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['pwa-192x192.png', 'pwa-512x512.png'],
       manifest: {
-        name: 'Mi App Móvil',
-        short_name: 'MiApp',
+        name: 'Tele-Ajustes',
+        short_name: 'Tele-Ajustes',
         description: 'Aplicación móvil con React - Tecnología, Diseño, Innovación y más',
         theme_color: '#6366f1',
         background_color: '#0f172a',

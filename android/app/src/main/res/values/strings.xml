@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">Mi App Movil</string>
-    <string name="title_activity_main">Mi App Movil</string>
+    <string name="app_name">Tele-Ajustes</string>
+    <string name="title_activity_main">Tele-Ajustes</string>
     <string name="package_name">com.miapp.movil</string>
     <string name="custom_url_scheme">com.miapp.movil</string>
 </resources>

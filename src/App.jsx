@@ -61,7 +61,7 @@ function App() {
 
   // Console welcome message
   useEffect(() => {
-    console.log('%c¡Bienvenido a Mi App Móvil! 🚀', 'color: #6366f1; font-size: 20px; font-weight: bold;');
+    console.log('%c¡Bienvenido a Tele-Ajustes! 🚀', 'color: #6366f1; font-size: 20px; font-weight: bold;');
     console.log('%cDesarrollada con ❤️ usando React', 'color: #ec4899; font-size: 14px;');
   }, []);
 

@@ -1,4 +1,4 @@
-# Mi App Móvil
+# Tele-Ajustes
 
 Una aplicación móvil interactiva construida con **React** y **Vite**, diseñada para ofrecer una experiencia fluida y moderna.
 
