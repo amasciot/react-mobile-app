@@ -22,15 +22,15 @@ export const screens = [
                     description: 'Standard Gain: Requerido entre -4 y -6 dBm. High Gain: Requerido entre -10 y -14 dBm.(Validar con NOc ORE o hub)'
                 },
                 {
-                    label: 'Paso 3 (Verificación RPR en hub):',
-                    description: 'Standard Gain: Requerido entre -4 y -6 dBm. High Gain: Requerido entre -10 y -14 dBm.(Validar con NOc ORE o hub)'
+                    label: 'Paso 4 (Verificacion att switch):',
+                    description: 'Verificar antes del ajuste de portadoras con Hubque el att swtch del RX este colocado en posición 0.'
                 },
                 {
-                    label: 'Paso 4 (validar pad OIB):',
+                    label: 'Paso 5 (validar pad OIB):',
                     description: 'Validar los valores de pad OIB (RX y TX) segun tabla 4 de la seccion documentacion.'
                 },
                 {
-                    label: 'Paso 5 (RF en Directa):',
+                    label: 'Paso 6 (RF en Directa):',
                     description: 'Medir en el TP de salida del RX en modo "Experto de canales". Se deben medir a la salida 27 +/- 1 dBm planos en portadoras piloto y un MER >= a 40 dB. Ajustar los atenuadores en los 4 puertos al valor de la lápida del plano. Verificar los valores de ecualizadores de fabrica del modulo (estos deben ser de los originales y no se deben cambiar).'
                 },
                 {
@@ -89,7 +89,7 @@ export const screens = [
     {
         id: 'screen4',
         icon: '/collage.png',
-        title: 'Nodos VCCAP Armonic Hibridos',
+        title: 'Nodos VCCAP Harmonic Hibridos',
         subtitle: 'Son nodos legacy CISCO a los que se les cambio la parte optica por un VCCAP Harmonic',
         content: {
             heading: 'Procedimiento de Ajuste',
